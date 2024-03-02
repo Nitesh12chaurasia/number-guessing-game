@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have fun!</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <div id="maincontainer">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+    <!-- <script>
+        document.getElementById("gusessBtn").addEventListener('click', (e)=>{
+            e.preventDefault();
+            console.log("Clicked");
+        })
+    </script> -->
+</body>
+</html>
